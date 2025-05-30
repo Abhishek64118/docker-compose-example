@@ -8,9 +8,5 @@ services:
     build: my-frontend
   my-backend:
     build: my-backend
-    environment:
-      - ConnectionStrings__Default
-  my-database:
-    build: my-database
-    environment:
-      - MYSQL_ROOT_PASSWORD
+    env_file:
+      -.env
