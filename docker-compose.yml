@@ -15,5 +15,5 @@ services:
      logging:
       driver: json-file
     env_file:
-      - /docker-compose-example/.env
+      - /home/ubuntu/docker-compose-example/.env
     restart: always
