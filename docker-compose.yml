@@ -4,10 +4,16 @@ services:
     ports:
       - "80:80"
     restart: always
+     logging:
+      driver: json-file
   my-frontend:
     build: my-frontend
+     logging:
+      driver: json-file
   my-backend:
     build: my-backend
+     logging:
+      driver: json-file
     env_file:
       - /home/ubuntu/docker-compose-example/.env
     restart: always
