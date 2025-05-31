@@ -11,5 +11,5 @@ services:
   my-backend:
     build: my-backend
     env_file:
-      -.env
+      - /home/ubuntu/docker-compose-example/.env
     restart: always
