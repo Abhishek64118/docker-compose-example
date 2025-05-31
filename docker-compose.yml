@@ -7,7 +7,6 @@ services:
     restart: always
   my-frontend:
     build: my-frontend
-    restart: always
   my-backend:
     build: my-backend
     env_file:
